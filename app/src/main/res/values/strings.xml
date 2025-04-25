@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Tp4_android</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_livres">Livres</string>
+    <string name="title_personnages">Personnages</string>
 </resources>
