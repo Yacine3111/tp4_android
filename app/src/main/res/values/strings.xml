@@ -2,4 +2,5 @@
     <string name="app_name">Tp4_android</string>
     <string name="title_livres">Livres</string>
     <string name="title_personnages">Personnages</string>
+    <string name="content_description_photo_livre">photo_livre</string>
 </resources>
