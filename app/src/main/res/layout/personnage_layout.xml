@@ -8,32 +8,30 @@
     >
 
     <ImageView
-        android:id="@+id/livreCouverture"
+        android:id="@+id/personnageImage"
         style="@style/livre_item_height"
         android:layout_width="80dp"
-        android:contentDescription="@string/content_description_photo_livre"
-
+        android:layout_height="80dp"
+        android:contentDescription="@string/content_description_photo_personnage"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
-        style="@style/livre_item_height"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         >
         <TextView
-            android:id="@+id/TextViewTitre"
+            android:id="@+id/TextViewNom"
             style="@style/text_principal"
             />
         <TextView
-            android:id="@+id/TextViewDate"
+            android:id="@+id/TextViewMaison"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/TextViewDescription"
+            android:id="@+id/TextViewInterpreterPar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="3"
-            android:ellipsize="end"
             />
 
     </LinearLayout>

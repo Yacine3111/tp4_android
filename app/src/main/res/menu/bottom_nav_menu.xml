@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/navigation_livres"
-        android:icon="@drawable/ic_livres_black_24dp"
+        android:icon="@drawable/ic_livres_noir_24dp"
         android:title="@string/title_livres" />
 
     <item
         android:id="@+id/navigation_personnages"
-        android:icon="@drawable/ic_personnages_black_24dp"
+        android:icon="@drawable/ic_personnages_noir_24dp"
         android:title="@string/title_personnages" />
 
 </menu>

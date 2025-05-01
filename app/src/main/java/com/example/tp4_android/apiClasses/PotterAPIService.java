@@ -1,6 +1,7 @@
 package com.example.tp4_android.apiClasses;
 
 import com.example.tp4_android.modele.Livre;
+import com.example.tp4_android.modele.Personnages;
 
 import java.util.List;
 
@@ -13,11 +14,10 @@ public interface PotterAPIService {
     @GET("/fr/books")
     Call<List<Livre>> chercherLivres();
 
-    @GET("https://potterapi-fedeperin.vercel.app/fr/characters")
-    Call<ReponsePersonnages> chercherPersonnages
+    @GET("/fr/characters")
+    Call<List<Personnages>> chercherPersonnages
             (
                     @Query("search")
                     String personnageChercher
             );
-
 }
