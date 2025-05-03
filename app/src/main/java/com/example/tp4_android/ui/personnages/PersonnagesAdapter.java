@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.tp4_android.R;
@@ -19,8 +21,9 @@ public class PersonnagesAdapter extends ArrayAdapter<Personnages> {
     public PersonnagesAdapter(Context context, List<Personnages> livres){
         super(context,0,livres);
     }
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(int position, View convertView, @NonNull ViewGroup parent){
         PersonnageLayoutBinding binding;
 
         if(convertView==null){
@@ -34,11 +37,11 @@ public class PersonnagesAdapter extends ArrayAdapter<Personnages> {
         String cheminImage = personnage.cheminImage;
         ImageView imageView = binding.personnageImage;
 
-        binding.TextViewNom.setText(personnage.nom);
-        binding.TextViewMaison.setText(String.format("%s%s", getContext().getString(R.string.texte_maison),
+        binding.textViewNom.setText(personnage.nom);
+        binding.textViewMaison.setText(String.format("%s%s", getContext().getString(R.string.texte_maison),
                 personnage.maison));
 
-        binding.TextViewInterpreterPar.setText(String.format("%s%s", getContext().getString(R.string.texte_interpreteur),
+        binding.textViewInterpreterPar.setText(String.format("%s%s", getContext().getString(R.string.texte_interpreteur),
                 personnage.interpreteur));
 
         if(cheminImage!=null){

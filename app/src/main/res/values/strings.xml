@@ -2,8 +2,8 @@
     <string name="app_name">Tp4_android</string>
     <string name="title_livres">Livres</string>
     <string name="title_personnages">Personnages</string>
-    <string name="content_description_photo_livre">photo_livre</string>
-    <string name="content_description_photo_personnage">photo_personnage</string>
+    <string name="contenu_description_photo_livre">photo_livre</string>
+    <string name="contenu_description_photo_personnage">photo_personnage</string>
     <string name="texte_maison">"maison : "</string>
     <string name="texte_interpreteur">"Interprété par : "</string>
     <string name="message_erreur_404">Erreur lors du chargement des données.Erreur 404</string>

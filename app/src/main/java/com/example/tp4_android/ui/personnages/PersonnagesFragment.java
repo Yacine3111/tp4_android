@@ -36,8 +36,6 @@ public class PersonnagesFragment extends Fragment {
 
     private PersonnagesAdapter personnagesAdapter;
 
-    private List<Personnages> personnages;
-
     private Call<List<Personnages>> call;
 
 
@@ -50,8 +48,8 @@ public class PersonnagesFragment extends Fragment {
 
         call = potterAPIService.chercherPersonnages(binding.barreRecherche.getText().toString());
 
-        personnages = new ArrayList<>();
-        personnagesAdapter =new PersonnagesAdapter(getContext(),personnages);
+        List<Personnages> personnages = new ArrayList<>();
+        personnagesAdapter =new PersonnagesAdapter(getContext(), personnages);
 
         personnagesAdapter.notifyDataSetChanged();
 
@@ -61,7 +59,7 @@ public class PersonnagesFragment extends Fragment {
                     e.getKeyCode()== KeyEvent.KEYCODE_ENTER){
 
                 Call<List<Personnages>> callRecherche = potterAPIService.chercherPersonnages(binding.barreRecherche.getText().toString());
-                APIUtilitaire.appelAPI(callRecherche,personnagesAdapter,binding.listeViewPersonnages,getActivity());
+                APIUtilitaire.appelAPI(callRecherche,personnagesAdapter,binding.listViewPersonnages,getActivity());
             }
             return true;
         });
@@ -70,9 +68,7 @@ public class PersonnagesFragment extends Fragment {
 
     public void onResume(){
         super.onResume();
-        APIUtilitaire.appelAPI(call,personnagesAdapter,binding.listeViewPersonnages,getActivity());
-
-
+        APIUtilitaire.appelAPI(call,personnagesAdapter,binding.listViewPersonnages,getActivity());
     }
     @Override
     public void onDestroyView() {

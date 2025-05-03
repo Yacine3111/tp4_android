@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.tp4_android.R;
@@ -19,8 +21,9 @@ public class LivresAdapter extends ArrayAdapter<Livre> {
     public LivresAdapter(Context context, List<Livre> livres){
         super(context,0,livres);
     }
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(int position, View convertView, @NonNull ViewGroup parent){
         LivreLayoutBinding binding;
 
         if(convertView==null){
@@ -34,9 +37,9 @@ public class LivresAdapter extends ArrayAdapter<Livre> {
         String cheminCouverture = livre.cheminCouverture;
         ImageView imageView = binding.livreCouverture;
 
-        binding.TextViewTitre.setText(livre.titre);
-        binding.TextViewDate.setText(livre.dateDeSortie);
-        binding.TextViewDescription.setText(livre.description);
+        binding.textViewTitre.setText(livre.titre);
+        binding.textViewDate.setText(livre.dateDeSortie);
+        binding.texViewDescription.setText(livre.description);
 
         if(cheminCouverture!=null){
             Glide.with(getContext())

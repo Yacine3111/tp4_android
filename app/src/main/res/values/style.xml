@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="livre_item_height">
+    <style name="livre_item_hauteur">
         <item name="android:layout_marginEnd">12dp</item>
         <item name="android:layout_height">120dp</item>
     </style>

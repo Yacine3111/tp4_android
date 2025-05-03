@@ -1,14 +1,11 @@
 package com.example.tp4_android.apiClasses;
 
 import android.app.Activity;
-import android.content.Context;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.tp4_android.MainActivity;
 import com.example.tp4_android.R;
 
 import java.util.List;
@@ -44,7 +41,7 @@ public class APIUtilitaire {
     }
     private static void afficherChargementEtErreur(boolean enChargement, boolean afficherErreur, Activity activity){
         ProgressBar progressBar = activity.findViewById(R.id.progress_bar);
-        TextView textViewErreur = activity.findViewById(R.id.textView_erreur);
+        TextView textViewErreur = activity.findViewById(R.id.text_view_erreur);
 
         progressBar.setVisibility(enChargement ? ProgressBar.VISIBLE : ProgressBar.GONE);
         textViewErreur.setVisibility(afficherErreur ? TextView.VISIBLE : TextView.GONE);

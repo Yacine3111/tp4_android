@@ -8,11 +8,11 @@
     >
 
     <ImageView
-        android:id="@+id/personnageImage"
-        style="@style/livre_item_height"
+        android:id="@+id/personnage_image"
+        style="@style/livre_item_hauteur"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:contentDescription="@string/content_description_photo_personnage"
+        android:contentDescription="@string/contenu_description_photo_personnage"
         />
 
     <LinearLayout
@@ -21,19 +21,18 @@
         android:orientation="vertical"
         >
         <TextView
-            android:id="@+id/TextViewNom"
+            android:id="@+id/text_view_nom"
             style="@style/text_principal"
             />
         <TextView
-            android:id="@+id/TextViewMaison"
+            android:id="@+id/text_view_maison"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/TextViewInterpreterPar"
+            android:id="@+id/text_view_interpreter_par"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
-
     </LinearLayout>
 
 </LinearLayout>
