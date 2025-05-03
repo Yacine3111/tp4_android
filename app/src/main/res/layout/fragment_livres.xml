@@ -6,7 +6,7 @@
     tools:context=".ui.livres.LivresFragment"
     android:orientation="vertical"
     android:theme="@style/marge"
-    >
+    tools:ignore="VisualLintBounds">
 
     <ListView
         android:id="@+id/list_view_livres"

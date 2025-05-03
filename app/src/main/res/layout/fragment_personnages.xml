@@ -6,18 +6,18 @@
     tools:context=".ui.personnages.PersonnagesFragment"
     android:theme="@style/marge"
     android:orientation="vertical"
-    >
+    tools:ignore="VisualLintBounds">
     <EditText
         android:id="@+id/barre_recherche"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints=""
+        android:hint="@string/hint_barre_recherche"
         android:drawableStart="@android:drawable/ic_menu_search"
         android:drawablePadding="8dp"
         android:inputType="text"
-        tools:ignore="LabelFor"
 
-        />
+        tools:ignore="VisualLintTextFieldSize" />
     <ListView
         android:id="@+id/list_view_personnages"
         android:layout_width="match_parent"
