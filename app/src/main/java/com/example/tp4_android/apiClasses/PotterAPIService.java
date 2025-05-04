@@ -11,10 +11,10 @@ import retrofit2.http.Query;
 
 public interface PotterAPIService {
 
-    @GET("/fr/books")
+    @GET("fr/books")
     Call<List<Livre>> chercherLivres();
 
-    @GET("/fr/characters")
+    @GET("fr/characters")
     Call<List<Personnages>> chercherPersonnages
             (
                     @Query("search")

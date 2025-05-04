@@ -6,6 +6,6 @@
     <string name="contenu_description_photo_personnage">photo_personnage</string>
     <string name="texte_maison">"maison : "</string>
     <string name="texte_interpreteur">"Interprété par : "</string>
-    <string name="message_erreur_404">Erreur lors du chargement des données.Erreur 404</string>
-    <string name="hint_barre_recherche">recherche...</string>
+    <string name="message_erreur">Erreur lors du chargement des données. </string>
+    <string name="hint_barre_recherche">recherche…</string>
 </resources>

@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PotterClient {
-    public static final String URL_BASE = "https://potterapi-fedeperin.vercel.app/";
+    public static final String URL_BASE = "https://potterapi-fedeperin.vercel.app";
 
     private static Retrofit retrofit = null;
 
